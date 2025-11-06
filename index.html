@@ -101,58 +101,81 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="mt-16 bg-white/2 rounded-2xl p-8 backdrop-blur-sm border border-white/5 fade-in">
-  <h3 class="text-2xl font-bold">Обо мне</h3>
-  <p class="mt-4 text-slate-300">
-    Я — практичный инженер по информационной безопасности. Люблю разбирать сложные системы, находить слабые места и укреплять их.
-    Работаю с сетями, аутентификацией, и веб‑приложениями. От отчёта — до внедрения исправлений.
-  </p>
-  <div class="mt-6 grid md:grid-cols-3 gap-4">
-    <div class="p-4 rounded-xl bg-white/3 border border-white/6">
-      <h4 class="font-semibold">Аудит</h4>
-      <p class="mt-2 text-slate-300 text-sm">Web & infra pentests, проверка архитектуры и поиск критических уязвимостей</p>
-    </div>
-    <div class="p-4 rounded-xl bg-white/3 border border-white/6">
-      <h4 class="font-semibold">Внедрение</h4>
-      <p class="mt-2 text-slate-300 text-sm">TOTP/2FA, FreeRADIUS, pfSense, WireGuard — практический опыт внедрения</p>
-    </div>
-    <div class="p-4 rounded-xl bg-white/3 border border-white/6">
-      <h4 class="font-semibold">Отчеты</h4>
-      <p class="mt-2 text-slate-300 text-sm">Понятные отчёты, PoC и рекомендации по устранению</p>
+<section id="about" class="mt-16 fade-in">
+  <div class="border border-white/10 rounded-2xl p-8 backdrop-blur-sm bg-white/5 hover:border-white/20 transition-all duration-300">
+    <h3 class="text-2xl font-bold">Обо мне</h3>
+    <p class="mt-4 text-slate-300">
+      Я — практичный инженер по информационной безопасности. Люблю разбирать сложные системы, находить слабые места и укреплять их.
+      Работаю с сетями, аутентификацией, и веб-приложениями. От отчёта — до внедрения исправлений.
+    </p>
+
+    <div class="mt-6 grid md:grid-cols-3 gap-4">
+      <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-white/20 transition">
+        <h4 class="font-semibold">Аудит</h4>
+        <p class="mt-2 text-slate-300 text-sm">
+          Web & infra pentests, проверка архитектуры и поиск критических уязвимостей
+        </p>
+      </div>
+
+      <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-white/20 transition">
+        <h4 class="font-semibold">Внедрение</h4>
+        <p class="mt-2 text-slate-300 text-sm">
+          TOTP/2FA, FreeRADIUS, pfSense, WireGuard — практический опыт внедрения
+        </p>
+      </div>
+
+      <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-white/20 transition">
+        <h4 class="font-semibold">Отчеты</h4>
+        <p class="mt-2 text-slate-300 text-sm">
+          Понятные отчёты, PoC и рекомендации по устранению
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="mt-16 fade-in">
-  <h3 class="text-2xl font-bold">Проекты</h3>
-  <div class="mt-6 grid md:grid-cols-3 gap-6">
-    <div class="p-6 rounded-2xl bg-white/3 border border-white/5 hover-lift">
-      <h4 class="font-semibold text-lg">Wi‑Fi 2FA (Proof of Concept)</h4>
-      <p class="mt-3 text-slate-300 text-sm">FreeRADIUS + TOTP integration for secure Wi‑Fi access. Full PoC, report and mitigation guide.</p>
-      <div class="mt-4 flex flex-wrap gap-2">
-        <span class="text-xs px-2 py-1 bg-white/5 rounded">FreeRADIUS</span>
-        <span class="text-xs px-2 py-1 bg-white/5 rounded">TOTP</span>
-        <span class="text-xs px-2 py-1 bg-white/5 rounded">Python</span>
+  <div class="border border-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur-sm bg-white/5 hover:border-white/20 transition-all duration-300">
+    <h3 class="text-2xl font-bold">Проекты</h3>
+    <div class="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <div class="border border-white/10 rounded-xl p-6 bg-white/5 hover:border-white/20 transition">
+        <h4 class="font-semibold text-lg">Wi-Fi 2FA (Proof of Concept)</h4>
+        <p class="mt-3 text-slate-300 text-sm">
+          FreeRADIUS + TOTP integration for secure Wi-Fi access. Full PoC, report and mitigation guide.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs px-2 py-1 bg-white/5 rounded">FreeRADIUS</span>
+          <span class="text-xs px-2 py-1 bg-white/5 rounded">TOTP</span>
+          <span class="text-xs px-2 py-1 bg-white/5 rounded">Python</span>
+        </div>
       </div>
-    </div>
-    <div class="p-6 rounded-2xl bg-white/3 border border-white/5 hover-lift">
-      <h4 class="font-semibold text-lg">Pentest: Internal App</h4>
-      <p class="mt-3 text-slate-300 text-sm">Full-stack web audit, critical findings triaged and verified. Recommended fixes included.</p>
-      <div class="mt-4 flex flex-wrap gap-2">
-        <span class="text-xs px-2 py-1 bg-white/5 rounded">Web</span>
-        <span class="text-xs px-2 py-1 bg-white/5 rounded">OWASP</span>
-        <span class="text-xs px-2 py-1 bg-white/5 rounded">Burp Suite</span>
+
+      <div class="border border-white/10 rounded-xl p-6 bg-white/5 hover:border-white/20 transition">
+        <h4 class="font-semibold text-lg">Pentest: Internal App</h4>
+        <p class="mt-3 text-slate-300 text-sm">
+          Full-stack web audit, critical findings triaged and verified. Recommended fixes included.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs px-2 py-1 bg-white/5 rounded">Web</span>
+          <span class="text-xs px-2 py-1 bg-white/5 rounded">OWASP</span>
+          <span class="text-xs px-2 py-1 bg-white/5 rounded">Burp Suite</span>
+        </div>
       </div>
-    </div>
-    <div class="p-6 rounded-2xl bg-white/3 border border-white/5 hover-lift">
-      <h4 class="font-semibold text-lg">Infrastructure Hardening</h4>
-      <p class="mt-3 text-slate-300 text-sm">Baseline hardening playbook for Linux servers and perimeter devices (pfSense, WireGuard).</p>
-      <div class="mt-4 flex flex-wrap gap-2">
-        <span class="text-xs px-2 py-1 bg-white/5 rounded">Linux</span>
-        <span class="text-xs px-2 py-1 bg-white/5 rounded">pfSense</span>
-        <span class="text-xs px-2 py-1 bg-white/5 rounded">IaC</span>
+
+      <div class="border border-white/10 rounded-xl p-6 bg-white/5 hover:border-white/20 transition">
+        <h4 class="font-semibold text-lg">Infrastructure Hardening</h4>
+        <p class="mt-3 text-slate-300 text-sm">
+          Baseline hardening playbook for Linux servers and perimeter devices (pfSense, WireGuard).
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs px-2 py-1 bg-white/5 rounded">Linux</span>
+          <span class="text-xs px-2 py-1 bg-white/5 rounded">pfSense</span>
+          <span class="text-xs px-2 py-1 bg-white/5 rounded">IaC</span>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
