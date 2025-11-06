@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Шухрат — Информационная безопасность</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* Простые анимации вместо Framer Motion */
+  .fade-in { opacity: 0; animation: fadeIn 0.8s forwards; }
+  .slide-in-left { opacity: 0; transform: translateX(-30px); animation: slideInLeft 0.6s forwards; }
+  .hover-lift:hover { transform: translateY(-6px); transition: transform 0.3s; }
+  @keyframes fadeIn { to { opacity: 1; } }
+  @keyframes slideInLeft { to { opacity: 1; transform: translateX(0); } }
+</style>
+</head>
+<body class="bg-gradient-to-b from-gray-900 via-slate-900 to-black text-slate-100 antialiased">
+
+<!-- HEADER -->
+<header class="max-w-6xl mx-auto px-6 py-8 flex items-center justify-between">
+  <div class="flex items-center gap-4">
+    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-500 flex items-center justify-center shadow-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 1.5-1 2-1 3m0 0c0 1 1 2 1 2m-1-2v2m-1-2c0-1-1-2-1-3s1-2 1-3m0 0c0-1 1-2 1-2m0 0V4"/>
+      </svg>
+    </div>
+    <div>
+      <h1 class="text-xl font-semibold tracking-tight">Шухрат — Специалист по информационной безопасности</h1>
+      <p class="text-sm text-slate-400">Pentest · Network Security · Secure Architecture</p>
+    </div>
+  </div>
+  <nav class="hidden md:flex gap-6 items-center text-slate-300">
+    <a href="#about" class="hover:text-white">Обо мне</a>
+    <a href="#projects" class="hover:text-white">Проекты</a>
+    <a href="#certs" class="hover:text-white">Сертификаты</a>
+    <a href="#contact" class="hover:text-white">Контакты</a>
+  </nav>
+  <div class="md:hidden text-slate-300">☰</div>
+</header>
+
+<main class="max-w-6xl mx-auto px-6 py-12">
+
+<!-- HERO -->
+<section class="grid md:grid-cols-2 gap-10 items-center">
+  <div class="space-y-6 slide-in-left">
+    <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+      Я делаю сети и приложения безопасными — от Wi‑Fi до облака
+    </h2>
+    <p class="text-slate-300 max-w-xl">
+      Пентесты, оценка уязвимостей, внедрение двухфакторной аутентификации и аудит инфраструктуры.
+      Практический подход, понятные отчёты и план устранения рисков.
+    </p>
+    <div class="flex gap-4 items-center">
+      <a href="#contact" class="inline-flex items-center gap-3 bg-indigo-600/90 hover:bg-indigo-500 transition px-5 py-3 rounded-lg font-medium shadow">Связаться</a>
+      <a href="#projects" class="text-slate-300 hover:text-white">Посмотреть проекты →</a>
+    </div>
+    <div class="flex gap-3 mt-4">
+      <a href="https://github.com/yourhandle" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-white/5 hover:bg-white/6 transition">
+        <span class="text-sm text-slate-200">GitHub</span>
+      </a>
+      <a href="https://linkedin.com/in/yourhandle" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-white/5 hover:bg-white/6 transition">
+        <span class="text-sm text-slate-200">LinkedIn</span>
+      </a>
+      <a href="mailto:you@domain.com" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-white/5 hover:bg-white/6 transition">
+        <span class="text-sm text-slate-200">Email</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="relative fade-in">
+    <div class="rounded-2xl overflow-hidden border border-white/5 shadow-2xl">
+      <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-8">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-3">
+            <p class="text-slate-400 text-sm">Опыт</p>
+            <p class="text-2xl font-semibold">3+ лет</p>
+          </div>
+          <div class="space-y-3">
+            <p class="text-slate-400 text-sm">Специализации</p>
+            <p class="text-2xl font-semibold">Pentest · Network</p>
+          </div>
+        </div>
+        <div class="mt-6 border-t border-white/5 pt-6">
+          <p class="text-sm text-slate-300">Краткий список навыков</p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="text-xs px-2 py-1 bg-white/5 rounded">FreeRADIUS</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded">TOTP</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded">pfSense</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded">WireGuard</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded">Burp Suite</span>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded">Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute -right-6 -bottom-6 w-48 h-48 rounded-lg bg-gradient-to-tr from-indigo-500/20 via-purple-500/10 to-transparent blur-2xl pointer-events-none"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="mt-16 bg-white/2 rounded-2xl p-8 backdrop-blur-sm border border-white/5 fade-in">
+  <h3 class="text-2xl font-bold">Обо мне</h3>
+  <p class="mt-4 text-slate-300">
+    Я — практичный инженер по информационной безопасности. Люблю разбирать сложные системы, находить слабые места и укреплять их.
+    Работаю с сетями, аутентификацией, и веб‑приложениями. От отчёта — до внедрения исправлений.
+  </p>
+  <div class="mt-6 grid md:grid-cols-3 gap-4">
+    <div class="p-4 rounded-xl bg-white/3 border border-white/6">
+      <h4 class="font-semibold">Аудит</h4>
+      <p class="mt-2 text-slate-300 text-sm">Web & infra pentests, проверка архитектуры и поиск критических уязвимостей</p>
+    </div>
+    <div class="p-4 rounded-xl bg-white/3 border border-white/6">
+      <h4 class="font-semibold">Внедрение</h4>
+      <p class="mt-2 text-slate-300 text-sm">TOTP/2FA, FreeRADIUS, pfSense, WireGuard — практический опыт внедрения</p>
+    </div>
+    <div class="p-4 rounded-xl bg-white/3 border border-white/6">
+      <h4 class="font-semibold">Отчеты</h4>
+      <p class="mt-2 text-slate-300 text-sm">Понятные отчёты, PoC и рекомендации по устранению</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="mt-16 fade-in">
+  <h3 class="text-2xl font-bold">Проекты</h3>
+  <div class="mt-6 grid md:grid-cols-3 gap-6">
+    <div class="p-6 rounded-2xl bg-white/3 border border-white/5 hover-lift">
+      <h4 class="font-semibold text-lg">Wi‑Fi 2FA (Proof of Concept)</h4>
+      <p class="mt-3 text-slate-300 text-sm">FreeRADIUS + TOTP integration for secure Wi‑Fi access. Full PoC, report and mitigation guide.</p>
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="text-xs px-2 py-1 bg-white/5 rounded">FreeRADIUS</span>
+        <span class="text-xs px-2 py-1 bg-white/5 rounded">TOTP</span>
+        <span class="text-xs px-2 py-1 bg-white/5 rounded">Python</span>
+      </div>
+    </div>
+    <div class="p-6 rounded-2xl bg-white/3 border border-white/5 hover-lift">
+      <h4 class="font-semibold text-lg">Pentest: Internal App</h4>
+      <p class="mt-3 text-slate-300 text-sm">Full-stack web audit, critical findings triaged and verified. Recommended fixes included.</p>
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="text-xs px-2 py-1 bg-white/5 rounded">Web</span>
+        <span class="text-xs px-2 py-1 bg-white/5 rounded">OWASP</span>
+        <span class="text-xs px-2 py-1 bg-white/5 rounded">Burp Suite</span>
+      </div>
+    </div>
+    <div class="p-6 rounded-2xl bg-white/3 border border-white/5 hover-lift">
+      <h4 class="font-semibold text-lg">Infrastructure Hardening</h4>
+      <p class="mt-3 text-slate-300 text-sm">Baseline hardening playbook for Linux servers and perimeter devices (pfSense, WireGuard).</p>
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="text-xs px-2 py-1 bg-white/5 rounded">Linux</span>
+        <span class="text-xs px-2 py-1 bg-white/5 rounded">pfSense</span>
+        <span class="text-xs px-2 py-1 bg-white/5 rounded">IaC</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certs" class="mt-16 bg-white/3 rounded-2xl p-6 border border-white/6 fade-in">
+  <h3 class="text-2xl font-bold">Сертификаты</h3>
+  <p class="mt-3 text-slate-300 text-sm">Udemy — несколько курсов по пентестингу и веб‑безопасности. Готовлюсь к дальнейшим сертификациям.</p>
+  <div class="mt-4 flex gap-3 flex-wrap">
+    <div class="px-4 py-2 bg-white/5 rounded-md text-sm">
+      <div class="font-medium">Learn Bug Bounty Hunting</div>
+      <div class="text-xs text-slate-300">Udemy</div>
+    </div>
+    <div class="px-4 py-2 bg-white/5 rounded-md text-sm">
+      <div class="font-medium">Ethical Hacking From Scratch</div>
+      <div class="text-xs text-slate-300">Udemy</div>
+    </div>
+    <div class="px-4 py-2 bg-white/5 rounded-md text-sm">
+      <div class="font-medium">Cloud-Based Hacking</div>
+      <div class="text-xs text-slate-300">Udemy</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="mt-16 p-8 rounded-2xl bg-gradient-to-r from-slate-800/50 to-black border border-white/5 fade-in">
+  <div class="grid md:grid-cols-2 gap-6 items-center">
+    <div>
+      <h3 class="text-2xl font-bold">Готов к новым задачам</h3>
+      <p class="mt-3 text-slate-300">Если хочешь сотрудничать или нужен аудит — напиши, обсудим.</p>
+      <div class="mt-6 flex items-center gap-3">
+        <a href="https://github.com/yourhandle" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 rounded-md">GitHub</a>
+        <a href="https://linkedin.com/in/yourhandle" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 rounded-md">LinkedIn</a>
+        <a href="mailto:you@domain.com" class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 rounded-md">Email</a>
+      </div>
+    </div>
+    <form class="bg-white/3 p-6 rounded-lg border border-white/6">
+      <label class="block text-sm text-slate-300">Имя</label>
+      <input class="mt-2 w-full bg-transparent border border-white/6 px-3 py-2 rounded" placeholder="Твоё имя" />
+      <label class="block text-sm text-slate-300 mt-4">Email</label>
+      <input class="mt-2 w-full bg-transparent border border-white/6 px-3 py-2 rounded" placeholder="you@domain.com" />
+      <label class="block text-sm text-slate-300 mt-4">Сообщение</label>
+      <textarea class="mt-2 w-full bg-transparent border border-white/6 px-3 py-2 rounded h-28" placeholder="Коротко о задаче"></textarea>
+      <button type="button" class="mt-4 w-full bg-indigo-600/90 py-2 rounded font-medium">Отправить</button>
+    </form>
+  </div>
+</section>
+
+<footer class="mt-16 text-center text-slate-500 text-sm pb-12">© 2025 Шухрат — информационная безопасность. Все права защищены.</footer>
+</main>
+
+</body>
+</html>
